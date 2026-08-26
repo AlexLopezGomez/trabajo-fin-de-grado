@@ -29,9 +29,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --webpack",
     "start": "next start",
-    "seed": "tsx script/seed-environment.ts",
-    "create-admin": "tsx script/create-admin.ts",
-    "create-operator": "tsx script/create-operator.ts"
+    "seed": "tsx scripts/seed-environment.ts",
+    "create-admin": "tsx scripts/create-admin.ts",
+    "create-operator": "tsx scripts/create-operator.ts"
   },
   "dependencies": {
     "@ai-sdk/openai": "^2.0.73",
