@@ -1,0 +1,56 @@
+# Dependencies and Next.js output
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# Local tooling and editor data
+.DS_Store
+.cursor/
+.agents/
+.playwright-mcp/
+.claude/
+.vercel/
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.tgz
+*.pid
+*.pid.lock
+__pycache__/
+*.pyc
+
+# Academic material and non-runtime documentation
+*.pdf
+*.docx
+*.tex
+*.mmd
+*.aux
+*.lof
+*.lot
+*.out
+*.toc
+*.zip
+*.txt
+*.md
+!README.md
+memorias_ejemplo/
+
+# Development-only files
+**/__tests__/
+**/*.test.ts
+test/
+scripts/
+script/
+.github/
