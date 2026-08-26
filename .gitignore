@@ -54,3 +54,7 @@ test/
 scripts/
 script/
 .github/
+
+# Public TFG document
+!docs/
+!docs/memoria.pdf
