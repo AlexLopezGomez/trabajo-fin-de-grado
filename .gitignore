@@ -52,7 +52,6 @@ memorias_ejemplo/
 **/*.test.ts
 test/
 scripts/
-script/
 .github/
 
 # Public TFG document

@@ -37,9 +37,26 @@ NEXTAUTH_SECRET=
 NEXTAUTH_URL=http://localhost:3000
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
+INITIAL_ADMIN_EMAIL=
+INITIAL_ADMIN_PASSWORD=
 ```
 
 `AUTH_MONGODB_URI` es opcional. Si no se define, la aplicación utiliza `MONGODB_URI` también para la base de datos de autenticación.
+
+## Inicializar usuarios y roles
+
+Después de definir `INITIAL_ADMIN_EMAIL` e `INITIAL_ADMIN_PASSWORD` en `.env.local`, crea el usuario administrador y los cuatro roles integrados:
+
+```bash
+npm run seed
+```
+
+También puedes crear un administrador u operador por separado. Para el operador, define `OPERATOR_EMAIL` y `OPERATOR_PASSWORD` en `.env.local`:
+
+```bash
+npm run create-admin
+npm run create-operator
+```
 
 Inicia el servidor de desarrollo:
 
@@ -59,4 +76,7 @@ El repositorio incluye el catálogo de esquema usado por la aplicación para la 
 npm run dev
 npm run build
 npm start
+npm run seed
+npm run create-admin
+npm run create-operator
 ```
