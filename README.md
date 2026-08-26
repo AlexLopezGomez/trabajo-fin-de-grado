@@ -15,15 +15,18 @@ Next.js 16, React 19, TypeScript, MongoDB, NextAuth y OpenAI mediante Vercel AI 
 - Flujos de aprobación para consultas de coste elevado.
 - Visualización de resultados y exportación de datos.
 
-## Ejecución local
+## Instalación e inicio
 
 Requisitos: Node.js 18 o superior, una base de datos MongoDB y credenciales de OpenAI y Google OAuth.
 
 ```bash
+git clone https://github.com/AlexLopezGomez/trabajo-fin-de-grado.git
+cd trabajo-fin-de-grado
 npm ci
+cp .env.example .env.local
 ```
 
-Crea un archivo `.env.local` en la raíz del proyecto. Como mínimo, configura:
+Abre `.env.local` y completa, como mínimo, estas variables:
 
 ```env
 MONGODB_URI=
